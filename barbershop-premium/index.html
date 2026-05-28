@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atelier Barber | Луксозен барбершоп</title>
+  <meta name="description" content="Луксозен барбершоп — премиум подстригвания, брада, royal грижа. Запази час, галерия и VIP обслужване.">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <svg class="icon-sprite" aria-hidden="true" focusable="false">
+    <symbol id="icon-scissors" viewBox="0 0 24 24"><path d="M4 4l6 6m0-6L4 10m6-2h12M4 20l6-6m0 6L4 14m6 2h12" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round"/></symbol>
+    <symbol id="icon-star" viewBox="0 0 24 24"><path d="M12 2l2.4 7.4H22l-6 4.6 2.3 7-6.3-4.6L5.7 21l2.3-7-6-4.6h5.6L12 2z" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linejoin="round"/></symbol>
+    <symbol id="icon-users" viewBox="0 0 24 24"><path d="M16 20v-1a4 4 0 00-4-4H6a4 4 0 00-4 4v1M12 11a4 4 0 100-8 4 4 0 000 8zm8 9v-1a3 3 0 00-2-2.83M16 3.17a4 4 0 010 7.66" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round"/></symbol>
+    <symbol id="icon-award" viewBox="0 0 24 24"><circle cx="12" cy="9" r="5" fill="none" stroke="currentColor" stroke-width="1.25"/><path d="M8.5 14L7 22l5-2.5L17 22l-1.5-8" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linejoin="round"/></symbol>
+    <symbol id="icon-crown" viewBox="0 0 24 24"><path d="M3 18h18M5 18l2-9 5 5 5-5 2 9M6 10l3-5 3 3 3-3 3 5" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linejoin="round"/></symbol>
+    <symbol id="icon-beard" viewBox="0 0 24 24"><path d="M12 14c-4 0-6 3-6 6v2h12v-2c0-3-2-6-6-6zM8 8a4 4 0 018 0" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round"/></symbol>
+    <symbol id="icon-razor" viewBox="0 0 24 24"><path d="M4 20l16-8M4 12l16-8M4 4l10 5" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round"/></symbol>
+    <symbol id="icon-sparkle" viewBox="0 0 24 24"><path d="M12 3v3m0 12v3M3 12h3m12 0h3M5.6 5.6l2.1 2.1m8.6 8.6l2.1 2.1m0-12.8l-2.1 2.1m-8.6 8.6L5.6 18.4" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round"/></symbol>
+    <symbol id="icon-phone" viewBox="0 0 24 24"><path d="M6.5 4h3l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v3a2 2 0 01-2 2A15 15 0 014 6.5 2 2 0 016.5 4z" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linejoin="round"/></symbol>
+    <symbol id="icon-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="1" fill="none" stroke="currentColor" stroke-width="1.25"/><path d="M3 7l9 6 9-6" fill="none" stroke="currentColor" stroke-width="1.25"/></symbol>
+    <symbol id="icon-pin" viewBox="0 0 24 24"><path d="M12 21s6-5.2 6-10a6 6 0 10-12 0c0 4.8 6 10 6 10z" fill="none" stroke="currentColor" stroke-width="1.25"/><circle cx="12" cy="11" r="2" fill="none" stroke="currentColor" stroke-width="1.25"/></symbol>
+    <symbol id="icon-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8" fill="none" stroke="currentColor" stroke-width="1.25"/><path d="M12 8v4l3 2" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round"/></symbol>
+    <symbol id="icon-calendar" viewBox="0 0 24 24"><rect x="4" y="5" width="16" height="15" rx="1" fill="none" stroke="currentColor" stroke-width="1.25"/><path d="M8 3v4M16 3v4M4 10h16" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round"/></symbol>
+    <symbol id="icon-quote" viewBox="0 0 24 24"><path d="M7 12H4a3 3 0 013-3V7a5 5 0 015 5v5H7v-5zm10 0h-3a3 3 0 013-3V7a5 5 0 00-5 5v5h5v-5z" fill="currentColor" opacity="0.35"/></symbol>
+    <symbol id="icon-instagram" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="4" fill="none" stroke="currentColor" stroke-width="1.25"/><circle cx="12" cy="12" r="3.5" fill="none" stroke="currentColor" stroke-width="1.25"/><circle cx="17" cy="7" r="0.75" fill="currentColor"/></symbol>
+    <symbol id="icon-telegram" viewBox="0 0 24 24"><path d="M4 12l16-6-3 14-5-4-4 4v-8z" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linejoin="round"/></symbol>
+    <symbol id="icon-facebook" viewBox="0 0 24 24"><path d="M14 8h3V5h-3c-2.8 0-5 2.2-5 5v3H7v3h4v8h4v-8h3.5l.5-3H15V9c0-.6.4-1 1-1z" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linejoin="round"/></symbol>
+    <symbol id="icon-chevron-left" viewBox="0 0 24 24"><path d="M15 6l-6 6 6 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></symbol>
+    <symbol id="icon-chevron-right" viewBox="0 0 24 24"><path d="M9 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></symbol>
+    <symbol id="icon-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="3.5" fill="none" stroke="currentColor" stroke-width="1.25"/><path d="M5 20c1.5-4 4.5-6 7-6s5.5 2 7 6" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round"/></symbol>
+  </svg>
+
+  <a class="skip-link" href="#main">Към съдържанието</a>
+
+  <header class="header" role="banner">
+    <div class="header__inner container">
+      <a class="header__logo" href="#hero">
+        <svg class="icon" width="22" height="22"><use href="#icon-scissors"/></svg>
+        <span class="header__logo-text">Atelier</span>
+      </a>
+      <nav class="header__nav" aria-label="Основна навигация">
+        <a href="#pro-nas"><svg class="icon" width="16" height="16"><use href="#icon-sparkle"/></svg> За нас</a>
+        <a href="#poslugy"><svg class="icon" width="16" height="16"><use href="#icon-scissors"/></svg> Услуги</a>
+        <a href="#galereya"><svg class="icon" width="16" height="16"><use href="#icon-star"/></svg> Галерия</a>
+        <a href="#vidguky"><svg class="icon" width="16" height="16"><use href="#icon-quote"/></svg> Отзиви</a>
+        <a href="#kontakty"><svg class="icon" width="16" height="16"><use href="#icon-pin"/></svg> Контакти</a>
+      </nav>
+      <button class="btn btn--gold btn--sm header__cta" type="button" data-open-booking>
+        <svg class="icon" width="16" height="16"><use href="#icon-calendar"/></svg>
+        Запази час
+      </button>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Меню">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <nav id="mobile-menu" class="mobile-menu" aria-label="Мобилна навигация" hidden>
+      <a href="#pro-nas"><svg class="icon" width="18" height="18"><use href="#icon-sparkle"/></svg> За нас</a>
+      <a href="#poslugy"><svg class="icon" width="18" height="18"><use href="#icon-scissors"/></svg> Услуги</a>
+      <a href="#galereya"><svg class="icon" width="18" height="18"><use href="#icon-star"/></svg> Галерия</a>
+      <a href="#vidguky"><svg class="icon" width="18" height="18"><use href="#icon-quote"/></svg> Отзиви</a>
+      <a href="#kontakty"><svg class="icon" width="18" height="18"><use href="#icon-pin"/></svg> Контакти</a>
+      <button class="btn btn--gold" type="button" data-open-booking>
+        <svg class="icon" width="16" height="16"><use href="#icon-calendar"/></svg>
+        Запази час
+      </button>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="hero" aria-labelledby="hero-title">
+      <div class="hero__bg" aria-hidden="true"></div>
+      <div class="hero__inner container">
+        <div class="hero__copy">
+          <p class="eyebrow reveal">
+            <svg class="icon" width="14" height="14"><use href="#icon-crown"/></svg>
+            Луксозен барбершоп · от 2019
+          </p>
+          <h1 id="hero-title" class="hero__title reveal">
+            <span class="hero__title-line">Atelier</span>
+            <span class="hero__title-accent">Barber</span>
+          </h1>
+          <p class="hero__text reveal">
+            Пространство, в което стилът среща ритуала. Премиум подстригвания, кралско бръснене
+            и грижа, създадена за мъже, които не правят компромиси.
+          </p>
+          <div class="hero__actions reveal">
+            <button class="btn btn--gold" type="button" data-open-booking>
+              <svg class="icon" width="18" height="18"><use href="#icon-calendar"/></svg>
+              VIP запис
+            </button>
+            <a class="btn btn--line" href="#poslugy">
+              <svg class="icon" width="18" height="18"><use href="#icon-scissors"/></svg>
+              Меню услуги
+            </a>
+          </div>
+        </div>
+        <div class="hero__visual reveal">
+          <div class="hero__frame">
+            <img src="images/hero.jpg" alt="Клиент след премиум подстригване" width="520" height="640" fetchpriority="high">
+            <div class="hero__badge">
+              <svg class="icon" width="20" height="20"><use href="#icon-star"/></svg>
+              <span>5.0</span>
+              <small>Премиум рейтинг</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hero__marquee" aria-hidden="true">
+        <div class="hero__marquee-track">
+          <span>Точност · Ритуал · Стил · Atelier · Точност · Ритуал · Стил · Atelier ·</span>
+          <span>Точност · Ритуал · Стил · Atelier · Точност · Ритуал · Стил · Atelier ·</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="process" id="pro-nas" aria-labelledby="process-title">
+      <div class="container">
+        <header class="section-head section-head--light reveal">
+          <p class="eyebrow eyebrow--gold">
+            <svg class="icon" width="14" height="14"><use href="#icon-sparkle"/></svg>
+            Нашият ритуал
+          </p>
+          <h2 id="process-title" class="section-title">Процес на грижата</h2>
+          <p class="section-desc">Три етапа — от консултация до перфектен финал</p>
+        </header>
+        <ol class="process__steps">
+          <li class="process-step reveal">
+            <div class="process-step__icon"><svg class="icon" width="28" height="28"><use href="#icon-user"/></svg></div>
+            <h3>Консултация</h3>
+            <p>Анализираме формата на лицето, текстурата на косата и вашия стил — персонален план за грижа.</p>
+          </li>
+          <li class="process-step reveal">
+            <div class="process-step__icon"><svg class="icon" width="28" height="28"><use href="#icon-scissors"/></svg></div>
+            <h3>Майсторство</h3>
+            <p>Прецизно подстригване, работа с брада или бръснене с топла кърпа — без бързане.</p>
+          </li>
+          <li class="process-step reveal">
+            <div class="process-step__icon"><svg class="icon" width="28" height="28"><use href="#icon-sparkle"/></svg></div>
+            <h3>Финал</h3>
+            <p>Стайлинг с премиум козметика и препоръки — образ, който държи форма седмици.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="stats" id="chomu-mi" aria-labelledby="stats-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow eyebrow--brown">
+            <svg class="icon" width="14" height="14"><use href="#icon-award"/></svg>
+            Доверие
+          </p>
+          <h2 id="stats-title" class="section-title">Защо Atelier</h2>
+        </header>
+        <ul class="stats__grid">
+          <li class="stat-card reveal">
+            <div class="stat-card__icon"><svg class="icon" width="26" height="26"><use href="#icon-award"/></svg></div>
+            <span class="stat-card__value" data-count="5">0</span>
+            <span class="stat-card__label">години опит</span>
+          </li>
+          <li class="stat-card reveal">
+            <div class="stat-card__icon"><svg class="icon" width="26" height="26"><use href="#icon-users"/></svg></div>
+            <span class="stat-card__value"><span data-count="5">0</span>k+</span>
+            <span class="stat-card__label">клиенти</span>
+          </li>
+          <li class="stat-card reveal">
+            <div class="stat-card__icon"><svg class="icon" width="26" height="26"><use href="#icon-star"/></svg></div>
+            <span class="stat-card__value" data-count="100">0</span>
+            <span class="stat-card__label">отзива</span>
+          </li>
+          <li class="stat-card reveal">
+            <div class="stat-card__icon"><svg class="icon" width="26" height="26"><use href="#icon-crown"/></svg></div>
+            <span class="stat-card__value" data-count="10">0</span>
+            <span class="stat-card__label">майстори</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="services" id="poslugy" aria-labelledby="services-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow eyebrow--brown">
+            <svg class="icon" width="14" height="14"><use href="#icon-scissors"/></svg>
+            Меню
+          </p>
+          <h2 id="services-title" class="section-title">Услуги и цени</h2>
+        </header>
+        <div class="services__grid">
+          <article class="service-card reveal">
+            <div class="service-card__head">
+              <div class="service-card__icon"><svg class="icon" width="32" height="32"><use href="#icon-scissors"/></svg></div>
+              <h3>Подстригвания</h3>
+            </div>
+            <ul class="service-card__list">
+              <li><span>Класическо подстригване</span><strong>45 лв</strong></li>
+              <li><span>Fade / Undercut</span><strong>55 лв</strong></li>
+              <li><span>Детско подстригване</span><strong>38 лв</strong></li>
+              <li><span>Стайлинг</span><strong>22 лв</strong></li>
+            </ul>
+            <button class="btn btn--line-dark btn--sm" type="button" data-open-booking>
+              <svg class="icon" width="14" height="14"><use href="#icon-calendar"/></svg>
+              Запази час
+            </button>
+          </article>
+          <article class="service-card service-card--featured reveal">
+            <span class="service-card__ribbon">
+              <svg class="icon" width="12" height="12"><use href="#icon-crown"/></svg>
+              Популярно
+            </span>
+            <div class="service-card__head">
+              <div class="service-card__icon"><svg class="icon" width="32" height="32"><use href="#icon-beard"/></svg></div>
+              <h3>Брада</h3>
+            </div>
+            <ul class="service-card__list">
+              <li><span>Оформяне на брада</span><strong>35 лв</strong></li>
+              <li><span>Корекция на контура</span><strong>28 лв</strong></li>
+              <li><span>Бръснене на брада</span><strong>32 лв</strong></li>
+              <li><span>Грижа + масло</span><strong>15 лв</strong></li>
+            </ul>
+            <button class="btn btn--gold btn--sm" type="button" data-open-booking>
+              <svg class="icon" width="14" height="14"><use href="#icon-calendar"/></svg>
+              Запази час
+            </button>
+          </article>
+          <article class="service-card reveal">
+            <div class="service-card__head">
+              <div class="service-card__icon"><svg class="icon" width="32" height="32"><use href="#icon-razor"/></svg></div>
+              <h3>Royal</h3>
+            </div>
+            <ul class="service-card__list">
+              <li><span>Подстригване + брада</span><strong>75 лв</strong></li>
+              <li><span>Класическо бръснене</span><strong>48 лв</strong></li>
+              <li><span>Royal пакет</span><strong>99 лв</strong></li>
+              <li><span>VIP обслужване</span><strong>120 лв</strong></li>
+            </ul>
+            <button class="btn btn--line-dark btn--sm" type="button" data-open-booking>
+              <svg class="icon" width="14" height="14"><use href="#icon-calendar"/></svg>
+              Запази час
+            </button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery" id="galereya" aria-labelledby="gallery-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow eyebrow--brown">
+            <svg class="icon" width="14" height="14"><use href="#icon-star"/></svg>
+            Портфолио
+          </p>
+          <h2 id="gallery-title" class="section-title">Галерия</h2>
+        </header>
+        <ul class="gallery__grid">
+          <li class="gallery__item reveal"><div class="gallery__inner"><img src="images/works/work-01.jpg" alt="Fade подстригване" loading="lazy"><span class="gallery__caption">Fade</span></div></li>
+          <li class="gallery__item reveal"><div class="gallery__inner"><img src="images/works/work-02.jpg" alt="Оформяне на брада" loading="lazy"><span class="gallery__caption">Брада</span></div></li>
+          <li class="gallery__item reveal"><div class="gallery__inner"><img src="images/works/work-03.jpg" alt="Класическо бръснене" loading="lazy"><span class="gallery__caption">Бръснене</span></div></li>
+          <li class="gallery__item reveal"><div class="gallery__inner"><img src="images/works/work-04.jpg" alt="Модерно подстригване" loading="lazy"><span class="gallery__caption">Стил</span></div></li>
+          <li class="gallery__item reveal"><div class="gallery__inner"><img src="images/works/work-05.jpg" alt="Подстригване и брада" loading="lazy"><span class="gallery__caption">Комбо</span></div></li>
+          <li class="gallery__item reveal"><div class="gallery__inner"><img src="images/works/work-06.jpg" alt="Барбер в действие" loading="lazy"><span class="gallery__caption">Майстор</span></div></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="reviews" id="vidguky" aria-labelledby="reviews-title">
+      <div class="container reviews__inner">
+        <header class="section-head section-head--light reveal">
+          <p class="eyebrow eyebrow--gold">
+            <svg class="icon" width="14" height="14"><use href="#icon-quote"/></svg>
+            Отзиви
+          </p>
+          <h2 id="reviews-title" class="section-title">Какво казват клиентите</h2>
+        </header>
+        <div class="reviews__slider" aria-live="polite">
+          <button class="reviews__arrow reviews__arrow--prev" type="button" aria-label="Предишен отзив">
+            <svg class="icon" width="22" height="22"><use href="#icon-chevron-left"/></svg>
+          </button>
+          <blockquote class="reviews__quote">
+            <svg class="reviews__quote-icon icon" width="40" height="40"><use href="#icon-quote"/></svg>
+            <p class="reviews__text" id="review-text"></p>
+            <footer class="reviews__author" id="review-author"></footer>
+          </blockquote>
+          <button class="reviews__arrow reviews__arrow--next" type="button" aria-label="Следващ отзив">
+            <svg class="icon" width="22" height="22"><use href="#icon-chevron-right"/></svg>
+          </button>
+        </div>
+        <ul class="reviews__dots" aria-hidden="true">
+          <li class="is-active"></li><li></li><li></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="map-section" aria-label="Карта">
+      <div class="map-section__label container reveal">
+        <svg class="icon" width="18" height="18"><use href="#icon-pin"/></svg>
+        Намерете ни
+      </div>
+      <div class="map-section__frame">
+        <iframe title="Atelier Barber — Бургас" src="https://www.openstreetmap.org/export/embed.html?bbox=27.45%2C42.48%2C27.48%2C42.50&amp;layer=mapnik&amp;marker=42.49%2C27.47" loading="lazy"></iframe>
+      </div>
+    </section>
+
+    <footer class="footer" id="kontakty" role="contentinfo">
+      <div class="container footer__grid">
+        <div class="footer__brand reveal">
+          <a class="footer__logo" href="#hero">
+            <svg class="icon" width="24" height="24"><use href="#icon-scissors"/></svg>
+            Atelier Barber
+          </a>
+          <p class="footer__tagline">Луксозна грижа за съвременния мъж</p>
+          <ul class="footer__social">
+            <li><a href="#" aria-label="Instagram"><svg class="icon" width="18" height="18"><use href="#icon-instagram"/></svg></a></li>
+            <li><a href="#" aria-label="Facebook"><svg class="icon" width="18" height="18"><use href="#icon-facebook"/></svg></a></li>
+            <li><a href="#" aria-label="Telegram"><svg class="icon" width="18" height="18"><use href="#icon-telegram"/></svg></a></li>
+          </ul>
+        </div>
+        <div class="footer__col reveal">
+          <h3><svg class="icon" width="16" height="16"><use href="#icon-phone"/></svg> Контакти</h3>
+          <p><a href="tel:+359879282059">087 928 2059</a></p>
+          <p><a href="mailto:info@atelier-barber.bg">info@atelier-barber.bg</a></p>
+        </div>
+        <div class="footer__col reveal">
+          <h3><svg class="icon" width="16" height="16"><use href="#icon-pin"/></svg> Адрес</h3>
+          <p>ж.к. Изгрев<br>8000 Бургас, България</p>
+        </div>
+        <div class="footer__col reveal">
+          <h3><svg class="icon" width="16" height="16"><use href="#icon-clock"/></svg> Работно време</h3>
+          <p>Пон–Пет: 10:00 – 20:00</p>
+          <p>Съб: 10:00 – 18:00</p>
+          <p>Нед: почивен ден</p>
+        </div>
+      </div>
+      <div class="footer__bottom container">
+        <p>&copy; <span id="year"></span> Atelier Barber. Създадено с прецизност.</p>
+      </div>
+    </footer>
+  </main>
+
+  <div class="modal" id="booking-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" hidden>
+    <div class="modal__backdrop" data-close-booking></div>
+    <div class="modal__panel">
+      <button class="modal__close" type="button" aria-label="Затвори" data-close-booking>&times;</button>
+      <div class="modal__icon"><svg class="icon" width="32" height="32"><use href="#icon-calendar"/></svg></div>
+      <h2 id="modal-title" class="modal__title">VIP запис</h2>
+      <p class="modal__subtitle">Ще се обадим в рамките на 15 минути</p>
+      <form class="modal__form" id="booking-form">
+        <label class="field">
+          <span class="field__label"><svg class="icon" width="14" height="14"><use href="#icon-user"/></svg> Име</span>
+          <input type="text" name="name" required autocomplete="name" placeholder="Вашето име">
+        </label>
+        <label class="field">
+          <span class="field__label"><svg class="icon" width="14" height="14"><use href="#icon-phone"/></svg> Телефон</span>
+          <input type="tel" name="phone" required autocomplete="tel" placeholder="08X XXX XXXX">
+        </label>
+        <button class="btn btn--gold btn--block" type="submit">
+          <svg class="icon" width="16" height="16"><use href="#icon-sparkle"/></svg>
+          Изпрати
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
