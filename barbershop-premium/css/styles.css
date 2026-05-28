@@ -17,8 +17,8 @@
   --text: #1a100c;
   --text-muted: #6b5344;
   --white: #ffffff;
-  --font-serif: "Cormorant Garamond", Georgia, serif;
-  --font-sans: "Outfit", system-ui, sans-serif;
+  --font-display: "Oswald", "Arial Narrow", sans-serif;
+  --font-sans: "DM Sans", system-ui, sans-serif;
   --container: 76rem;
   --header-h: 5rem;
   --header-h-compact: 4rem;
@@ -117,11 +117,12 @@ input {
 }
 
 .section-title {
-  font-family: var(--font-serif);
-  font-size: clamp(2.5rem, 6vw, 4.25rem);
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 5vw, 3.25rem);
   font-weight: 600;
-  line-height: 1.05;
-  letter-spacing: -0.03em;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
   color: var(--brown-900);
   margin: 0;
 }
@@ -284,10 +285,11 @@ input {
 }
 
 .header__logo-text {
-  font-family: var(--font-serif);
-  font-size: 1.5rem;
+  font-family: var(--font-display);
+  font-size: 1.125rem;
   font-weight: 600;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
   transition: font-size 0.45s var(--ease);
 }
 
@@ -454,34 +456,29 @@ input {
 }
 
 .hero__title {
-  font-family: var(--font-serif);
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 5.5vw, 3.75rem);
   font-weight: 600;
-  line-height: 0.92;
-  letter-spacing: -0.04em;
+  line-height: 1.08;
+  letter-spacing: 0.01em;
+  text-transform: none;
   margin: 0 0 1.5rem;
   color: var(--cream);
-}
-
-.hero__title-line {
-  display: block;
-  font-size: clamp(3.5rem, 11vw, 7.5rem);
-}
-
-.hero__title-accent {
-  display: block;
-  font-size: clamp(3rem, 9vw, 6rem);
-  font-style: italic;
-  color: var(--gold-light);
-  margin-top: -0.05em;
+  max-width: 22em;
 }
 
 .hero__text {
   max-width: 28rem;
   font-size: 1.0625rem;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.8;
   color: rgba(250, 246, 241, 0.72);
   margin: 0 0 2rem;
+}
+
+.hero__text strong {
+  color: var(--cream);
+  font-weight: 600;
 }
 
 .hero__actions {
@@ -543,7 +540,7 @@ input {
 }
 
 .hero__badge span {
-  font-family: var(--font-serif);
+  font-family: var(--font-display);
   font-size: 1.75rem;
   font-weight: 700;
   line-height: 1;
@@ -580,9 +577,11 @@ input {
 .hero__marquee-track span {
   flex-shrink: 0;
   padding-right: 3rem;
-  font-family: var(--font-serif);
-  font-size: clamp(1.25rem, 3vw, 2rem);
-  font-style: italic;
+  font-family: var(--font-display);
+  font-size: clamp(1.125rem, 3vw, 1.75rem);
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
   color: rgba(201, 169, 98, 0.35);
   white-space: nowrap;
 }
@@ -642,7 +641,7 @@ input {
 }
 
 .process-step h3 {
-  font-family: var(--font-serif);
+  font-family: var(--font-display);
   font-size: 1.5rem;
   font-weight: 600;
   color: var(--cream);
@@ -705,7 +704,7 @@ input {
 }
 
 .stat-card__value {
-  font-family: var(--font-serif);
+  font-family: var(--font-display);
   font-size: clamp(2.75rem, 5vw, 3.75rem);
   font-weight: 700;
   line-height: 1;
@@ -794,7 +793,7 @@ input {
 }
 
 .service-card__head h3 {
-  font-family: var(--font-serif);
+  font-family: var(--font-display);
   font-size: 1.75rem;
   font-weight: 600;
   color: var(--cream);
@@ -872,9 +871,11 @@ input {
   position: absolute;
   inset: auto 0 0 0;
   padding: 2rem 1rem 1rem;
-  font-family: var(--font-serif);
-  font-size: 1.25rem;
-  font-style: italic;
+  font-family: var(--font-display);
+  font-size: 1.125rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
   color: var(--cream);
   background: linear-gradient(transparent, rgba(18, 10, 6, 0.85));
   transform: translateY(100%);
@@ -937,10 +938,11 @@ input {
 }
 
 .reviews__text {
-  font-family: var(--font-serif);
-  font-size: clamp(1.25rem, 2.5vw, 1.625rem);
-  font-style: italic;
-  line-height: 1.6;
+  font-family: var(--font-display);
+  font-size: clamp(1.125rem, 2.5vw, 1.5rem);
+  font-weight: 400;
+  line-height: 1.55;
+  letter-spacing: 0.02em;
   color: var(--cream);
   margin: 0 0 1rem;
   transition: opacity 0.35s ease;
@@ -1016,6 +1018,31 @@ input {
   filter: sepia(30%) saturate(0.6) contrast(0.95);
 }
 
+.map-section__frame--placeholder {
+  display: grid;
+  place-content: center;
+  gap: 0.5rem;
+  min-height: clamp(280px, 38vh, 400px);
+  padding: 2rem;
+  text-align: center;
+  background: linear-gradient(160deg, var(--brown-800) 0%, var(--brown-950) 100%);
+  color: var(--cream);
+}
+
+.map-section__frame--placeholder p {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.map-section__frame--placeholder span {
+  font-size: 0.875rem;
+  color: var(--gold);
+}
+
 /* Footer */
 .footer {
   background: var(--brown-950);
@@ -1039,7 +1066,7 @@ input {
   display: inline-flex;
   align-items: center;
   gap: 0.6rem;
-  font-family: var(--font-serif);
+  font-family: var(--font-display);
   font-size: 1.75rem;
   font-weight: 600;
   color: var(--cream);
@@ -1202,7 +1229,7 @@ input {
 }
 
 .modal__title {
-  font-family: var(--font-serif);
+  font-family: var(--font-display);
   font-size: 2rem;
   font-weight: 600;
   color: var(--cream);
