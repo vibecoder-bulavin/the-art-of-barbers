@@ -60,7 +60,7 @@ function initScrollReveal() {
     const parent = el.parentElement;
     const siblings = parent ? [...parent.querySelectorAll(":scope > .reveal")] : [el];
     const index = siblings.indexOf(el);
-    el.style.setProperty("--reveal-delay", `${Math.min(index, 6) * 90}ms`);
+    el.style.setProperty("--reveal-delay", `${Math.min(index, 6) * 140}ms`);
   });
 
   const observer = new IntersectionObserver(
@@ -81,7 +81,7 @@ function initStatCounters() {
   const cards = document.querySelectorAll(".stat-card");
   if (!cards.length) return;
 
-  const animate = (el, target, duration = 1400) => {
+  const animate = (el, target, duration = 2200) => {
     const start = performance.now();
     const step = (now) => {
       const progress = Math.min((now - start) / duration, 1);
@@ -154,7 +154,7 @@ function initReviews() {
     setTimeout(() => {
       apply();
       textEl.classList.remove("is-fading");
-    }, 280);
+    }, 480);
   };
 
   show(0, false);
@@ -217,7 +217,7 @@ function initHeroParallax() {
     () => {
       const y = window.scrollY;
       if (y > window.innerHeight) return;
-      frame.style.transform = `translateY(${y * 0.06}px)`;
+      frame.style.transform = `translateY(${y * 0.035}px)`;
     },
     { passive: true }
   );
